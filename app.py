@@ -11,11 +11,11 @@ from PIL import Image, ImageDraw, ImageFont
 from fpdf import FPDF
 
 app = Flask(__name__)
-app.secret_key = 'Vstand4u1@'
+app.secret_key = 'your_key'
 
 # Email credentials
-EMAIL_USER = 'Vstand4u@gmail.com'
-EMAIL_PASS = 'Vstand4u1@'
+EMAIL_USER = 'you
+EMAIL_PASS = 'your_key'
 
 def allowed_file(filename):
     ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg', 'gif'}
@@ -27,7 +27,7 @@ def get_db_connection():
         host="localhost",
         user="root",
         password="root",
-        database="vstand4u_website"
+        database="website"
     )
 
 # Email OTP function
